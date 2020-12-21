@@ -11,7 +11,6 @@ contract Election {
     }
 
     mapping(uint => Candidate) public candidates;
-    mapping(address => bool) public voters;
     uint public candidatesCount;
     // Constructor
     constructor () public {
@@ -23,4 +22,4 @@ contract Election {
         candidatesCount++;
         candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
-}
+}}
