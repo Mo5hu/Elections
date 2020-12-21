@@ -45,6 +45,7 @@ contract("Election", function(accounts) {
       assert.equal(voteCount, 1, "increments the candidate's vote count");
     })
   });
+  
 
   it("throws an exception for invalid candidates", function() {
     return Election.deployed().then(function(instance) {
@@ -85,5 +86,5 @@ contract("Election", function(accounts) {
       var voteCount = candidate2[2];
       assert.equal(voteCount, 1, "candidate 2 did not receive any votes");
     });
-  });
+  }); 
 });
