@@ -11,6 +11,7 @@ contract Election {
     }
 
     mapping(uint => Candidate) public candidates;
+    mapping(address => bool) public voters;
     uint public candidatesCount;
     // Constructor
     constructor () public {
