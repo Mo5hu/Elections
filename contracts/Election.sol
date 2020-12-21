@@ -8,6 +8,10 @@ contract Election {
         uint voteCount;
     }
 
+    event votedEvent (
+        uint indexed _candidatedId
+    );
+
     mapping(uint => Candidate) public candidates;
     mapping(address => bool) public voters;
     uint public candidatesCount;
