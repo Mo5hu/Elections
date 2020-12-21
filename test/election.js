@@ -46,7 +46,6 @@ contract("Election", function(accounts) {
     })
   });
   
-
   it("throws an exception for invalid candidates", function() {
     return Election.deployed().then(function(instance) {
       electionInstance = instance;
