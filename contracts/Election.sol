@@ -14,6 +14,12 @@ contract Election {
     uint public candidatesCount;
     // Constructor
     constructor () public {
-        candidate = "Candidate 1";
+        addCandidate("Candidate 1");
+        addCandidate("Candidate 2");
+    }
+
+    function addCandidate (string _name) private {
+        candidatesCount++;
+        candidates[candidatesCount] = Candidate(candidatesCount, _name, 0);
     }
 }
