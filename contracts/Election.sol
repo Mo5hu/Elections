@@ -18,8 +18,8 @@ contract Election {
     
     // Constructor
     constructor () public {
-        addCandidate("Candidate 1");
-        addCandidate("Candidate 2");
+        addCandidate("K173634");
+        addCandidate("K173680");
     }
 
     function addCandidate (string memory _name) private {
